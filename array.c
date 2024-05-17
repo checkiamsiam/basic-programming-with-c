@@ -5,6 +5,8 @@ void main()
   int size = 5;
   int array[size]; // declaring an array of size 5
 
+  
+
   for (int i = 0; i < size; i++)
   {
     array[i] = i * 10; // initializing array elements to 0
@@ -64,5 +66,14 @@ void main()
   for (int i = 0; i < 7; i++)
   {
     printf("Value of array3[%d] is %d\n", i, array3[i]);
+  }
+
+  // dynamic size array
+  int dArray[] = {1, 2, 3, 4, 5};
+  // get the array size using sizeof operator
+  int dSize = sizeof(dArray) / sizeof(dArray[0]); // sizeof defines the size of the array in bytes 
+  for (int i = 0; i < dSize; i++)
+  {
+    printf("Value of dArray[%d] is %d\n", i, dArray[i]);
   }
 }
