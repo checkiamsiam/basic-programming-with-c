@@ -10,6 +10,12 @@ void main()
 
     double longB = 10.5566; // 8 bytes
     char c = 'A';
+
+
+    // pointers
+    int *p = &a;
+    
+    printf("%p\n", p); // %p is format specifier for pointer
     printf("%d\n", a);                  // %d is format specifier for integer
     printf("Value of b is %0.2f\n", b); // %f is format specifier for float
     printf("Value of c is %c\n", c);    // %c is format specifier for character
